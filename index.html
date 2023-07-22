@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl"> <!-- برای راست چین شدن -->
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Video Player - Blokchainology</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Online Video Player - Blockchainology</title>
+    <link rel="stylesheet" href="https://blokchainology.com/CDN/min24.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h2>پخش ویدیو با لینک مسقتیم</h2>
 
-    <input type="text" placeholder="لینک را وارد کنید">
-    <button>پخش</button>
-
-    <div class="video_vid">
-        <!-- در این محل ویدیو ساخته شده قرار میگیرد -->
+    <div class="header t-align-center green mb-20 p-15">
+        <h2>پخش کننده لینک مستقیم</h2>
     </div>
 
-    <h1>سایت ما</h1>
-    <a href="https://blokchainology.com/">site</a>
-<script src="app.js"></script>
+    <div class="main d-flex j-center mt-20 p-20 radius-15">
+        <input type="text" class="blue f-size20 radius-25 w--75 m-5 p-5 pl-15 pr-15" placeholder="لینک مورد نظر را وارد کنید">
+        <button class="btn back-dmagenta radius-25 white border-n">پخش</button>
+    </div>
+    <div id="video-div" class="d-flex j-center f-dir-col t-align-center m-20 p-10 back-dmagenta radius-30">
+        <video dir="ltr" class="m-20 p-10 radius-30" src="" controls></video>
+        <h2 class="message white p-5 pink"></h2>
+        <div id="audio_div">
+            <audio src="" controls></audio>
+        </div>
+    </div>
+
+    
+   
+    <div class="change t-align-center">
+        <button class="btnchange back-cadetblue white radius-15 border-n mb-20 pb-20" style="padding:10px 24px;">پخش مستقیم آهنگ</button>
+    </div>
+
+<script src="./assets/js/app.js"></script>
 </body>
 </html>
